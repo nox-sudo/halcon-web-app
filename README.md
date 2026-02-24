@@ -1,21 +1,15 @@
-# Halcón Web App
+# Halcón Project Analysis & Planning Document
 
-Aplicación web para gestión de pedidos de Halcón Distribuidora de Materiales de Construcción.
+The project repository was created on GitHub to manage version control, team collaboration, and
+maintain a full change history throughout the development lifecycle.
 
-## Estructura del proyecto
+## Folder structure:
 
-halcon-web-app/
-├── /frontend          # Código del cliente
-├── /backend           # API REST
-├── /database          # Scripts SQL
-├── /docs              # Documentación y diagramas
-├── .gitignore
-└── README.md
+• /frontend — React.js / Next.js UI application
+• /backend — Node.js or Laravel REST API
+• /database — SQL migration scripts and seed files
+• /docs — Diagrams and project documentation
+• README.md — Setup guide and environment instructions
 
-## Tecnologías
-- Frontend: HTML/CSS/JavaScript
-- Backend: Node.js / Express
-- Base de datos: MySQL
-
-## Metodología
-SCRUM - Sprints de 2 semanas
+## Methodology
+SCRUM - 2 weeks sprints

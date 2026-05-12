@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Providers;
+
+use App\Models\Order;
+use App\Models\User;
+use App\Policies\OrderPolicy;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function register(): void {}
+
+    public function boot(): void
+    {
+        Gate::policy(Order::class, OrderPolicy::class);
+
+        Gate::define('admin', function (User $user) {
+            return $user->isAdmin();
+        });
+    }
+}
